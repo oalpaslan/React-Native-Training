@@ -3,17 +3,27 @@ import { View, Text, StyleSheet, Image } from "react-native";
 
 const ImageDetail = (props) => {
   return (
-    <View>
+    <View style={styles.viewStyle}>
       <Image style={styles.imgStyle} source={props.imageSource} />
-      <Text>{props.title}</Text>
+      <Text style={styles.textStyle}>{props.title}</Text>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
+  viewStyle: {
+    alignItems: "center",
+    justifyContent: "center",
+  },
   imgStyle: {
-    width: 200,
-    height: 200,
+    width: 100,
+    height: 100,
+    margin: 10,
+    borderRadius: 15,
+  },
+  textStyle: {
+    color: "white",
+    fontFamily: "Zapfino",
   },
 });
 export default ImageDetail;

@@ -4,7 +4,7 @@ import ImageDetail from "../components/ImageDetail";
 
 const ImageScreen = () => {
   return (
-    <View>
+    <View style={styles.viewStyle}>
       <ImageDetail
         title="Apple"
         imageSource={require("../../assets/apple.jpg")}
@@ -25,5 +25,12 @@ const ImageScreen = () => {
   );
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  viewStyle: {
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "black",
+    height: "100%",
+  },
+});
 export default ImageScreen;
