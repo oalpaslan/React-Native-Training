@@ -23,7 +23,6 @@ const styles = StyleSheet.create({
   },
   textStyle: {
     color: "white",
-    fontFamily: "Zapfino",
   },
 });
 export default ImageDetail;
